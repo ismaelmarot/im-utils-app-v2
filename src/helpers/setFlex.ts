@@ -1,12 +1,12 @@
-import type { AlignItems, FlexDirection, JustifyContent } from '../types/flexValue.type';
+import type { FlexDirection, AlignItems, JustifyContent } from '../types/flexValue.type';
 
 export const flex = (
     direction: FlexDirection = 'row',
-    justify: JustifyContent = 'flex-start',
-    align: AlignItems = 'stretch'
+    align: AlignItems = 'stretch',
+    justify: JustifyContent = 'flex-start'
 ) => `
     display: flex;
     flex-direction: ${direction};
-    justify-content: ${justify};
     align-items: ${align};
+    justify-content: ${justify};
 `;

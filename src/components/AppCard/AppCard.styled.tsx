@@ -4,11 +4,14 @@ import { Card } from 'react-bootstrap';
 export const StyledCard = styled(Card)`
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    height: 200px;
+    font-size: 2rem;
 
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    .card-wrapper.expanded & {
+        height: 100%;
+        border-radius: 1.5rem;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.3);
     }
 `;
