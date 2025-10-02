@@ -9,6 +9,13 @@ export default function Home() {
     { title: "💰 Cash Counter", description: "App para contar dinero fácilmente" },
     { title: "📊 Gastos", description: "Control de gastos personales" },
     { title: "🚗 Autos", description: "Registro de mantenimiento y consumo" },
+    { title: "🚗 Autos", description: "Registro de mantenimiento y consumo" },
+    { title: "🚗 Autos", description: "Registro de mantenimiento y consumo" },
+    { title: "🚗 Autos", description: "Registro de mantenimiento y consumo" },
+    { title: "🚗 Autos", description: "Registro de mantenimiento y consumo" },
+    { title: "🚗 Autos", description: "Registro de mantenimiento y consumo" },
+    { title: "🚗 Autos", description: "Registro de mantenimiento y consumo" },
+    { title: "🚗 Autos", description: "Registro de mantenimiento y consumo" },
   ];
 
   const handleCardClick = (index: number) => {

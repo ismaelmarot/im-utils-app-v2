@@ -6,7 +6,7 @@ export const StyledCard = styled(Card)`
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    height: 200px;
+    height: 300px;
     font-size: 2rem;
 
     .card-wrapper.expanded & {
