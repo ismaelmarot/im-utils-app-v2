@@ -10,7 +10,7 @@ export const StyledCard = styled(Card)`
     cursor: pointer;
 
     .card-wrapper.expanded & {
-        height: 100vh;
+        ${size('','100vh')}
         border-radius: 1.5rem;
         box-shadow: 0 12px 40px rgba(0,0,0,0.3);
     }
