@@ -15,3 +15,11 @@ export const StyledCard = styled(Card)`
         box-shadow: 0 12px 40px rgba(0,0,0,0.3);
     }
 `;
+
+export const Title = styled(Card.Title)`
+    font-size: 2.5rem;
+`;
+
+export const Text = styled(Card.Text)`
+    font-size: 1.5rem;  
+`;
