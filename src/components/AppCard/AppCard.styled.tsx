@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { Card } from 'react-bootstrap';
+import { size } from '../../helpers/setSize';
 
 export const StyledCard = styled(Card)`
-    height: 300px;
+    ${size('','300px')}
     border-top:3px solid black;
     font-size: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
