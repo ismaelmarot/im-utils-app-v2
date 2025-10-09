@@ -3,7 +3,7 @@ import { flex } from '../../helpers/setFlex';
 import { size } from '../../helpers/setSize';
 
 export const ContainerStyled = styled.div`
-    ${flex('column', 'center', 'center')}
+    ${flex('column', 'center', 'flex-start')}
     ${size('100%','')}
     min-height: 100vh;
 `;

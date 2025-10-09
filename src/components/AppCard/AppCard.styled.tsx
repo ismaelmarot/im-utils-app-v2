@@ -4,8 +4,9 @@ import { size } from '../../helpers/setSize';
 import { COLORS } from '../../styles/colors';
 
 export const StyledCard = styled(Card)`
-    ${size('','300px')}
-    border-top:3px solid ${COLORS.dark};
+    ${size('100%','200px')}
+    border-top:5px solid ${COLORS.dark};
+    border-radius: 0;
     font-size: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -16,6 +17,7 @@ export const StyledCard = styled(Card)`
         top: 0;
         left: 0;
         z-index: 10;
+        border-top: none;
     }
 `;
 

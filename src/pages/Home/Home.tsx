@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <ContainerStyled>
       {apps.map((app, index) => (
-        <div
+        <div style={{width:'100%', margin:'0'}}
           key={index}
           className={`card-wrapper ${expandedIndex === index ? 'expanded' : ''}`}
           onClick={() => handleCardClick(index)}
