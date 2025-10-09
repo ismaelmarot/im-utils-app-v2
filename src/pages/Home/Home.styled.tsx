@@ -5,5 +5,5 @@ import { size } from '../../helpers/setSize';
 export const ContainerStyled = styled.div`
     ${flex('column', 'center', 'center')}
     ${size('100%','')}
-    min-height: 100vh; 
+    min-height: 100vh;
 `;

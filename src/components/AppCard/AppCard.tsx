@@ -5,7 +5,7 @@ import { StyledCard, Title, Text } from './AppCard.styled';
 export default function AppCard({ title, description }: AppCardProps) {
     return (
         <StyledCard>
-            <Card.Body>
+            <Card.Body style={{border:'3px solid red'}}>
                 <Title>{title}</Title>
                 <Text>{description}</Text>
             </Card.Body>
