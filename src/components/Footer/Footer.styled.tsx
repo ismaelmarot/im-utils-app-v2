@@ -8,13 +8,13 @@ export const FooterStyled = styled.footer`
     font-size: .8rem;
 `
 export const Button = styled.button`
-    color: ${COLORS.dark};
     font-size: .9rem;
+    color: ${COLORS.dark};
 `;
 
 export const Span = styled.span`
-    color: ${COLORS.dark};
     font-weight: bolder;
+    color: ${COLORS.dark};
 `;
 
 export const DivDesigned = styled.div`
