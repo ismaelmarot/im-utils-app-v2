@@ -7,3 +7,8 @@ export const ContainerStyled = styled.div`
     ${size('100%','')}
     min-height: 100vh;
 `;
+
+export const ContainerAppCard = styled.div`
+    ${size('100%','')}
+    margin: 0;
+`;

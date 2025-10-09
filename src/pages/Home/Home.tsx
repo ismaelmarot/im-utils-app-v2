@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import AppCard from '../../components/AppCard/AppCard';
-import { ContainerStyled } from './Home.styled';
+import { ContainerAppCard, ContainerStyled } from './Home.styled';
 
 export default function Home() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
@@ -18,13 +18,16 @@ export default function Home() {
   return (
     <ContainerStyled>
       {apps.map((app, index) => (
-        <div style={{width:'100%', margin:'0'}}
+        <ContainerAppCard
           key={index}
           className={`card-wrapper ${expandedIndex === index ? 'expanded' : ''}`}
           onClick={() => handleCardClick(index)}
         >
-          <AppCard title={app.title} description={app.description} />
-        </div>
+          <AppCard
+            title={app.title}
+            description={app.description}
+          />
+        </ContainerAppCard>
       ))}
     </ContainerStyled>
   );

@@ -5,7 +5,7 @@ import { COLORS } from '../../styles/colors';
 
 export const StyledCard = styled(Card)`
     ${size('100%','200px')}
-    border-top:5px solid ${COLORS.dark};
+    border-top:3px solid ${COLORS.dark};
     border-radius: 0;
     font-size: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -22,9 +22,11 @@ export const StyledCard = styled(Card)`
 `;
 
 export const Title = styled(Card.Title)`
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 600;
 `;
 
 export const Text = styled(Card.Text)`
-    font-size: 1.5rem;  
+    font-size: 1.2rem;  
+    font-style: italic;
 `;
