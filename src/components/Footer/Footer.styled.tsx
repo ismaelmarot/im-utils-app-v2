@@ -2,9 +2,8 @@ import styled from 'styled-components';
 import { COLORS } from '../../styles/colors';
 
 export const FooterStyled = styled.footer`
-    margin: 2rem .5rem .5rem;
-    padding-top: .5rem;
-    border-top: 1px solid ${COLORS.dark};
+    padding-top: 1rem;
+    border: 3px solid ${COLORS.dark};
     font-size: .8rem;
 `
 export const Button = styled.button`

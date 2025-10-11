@@ -1,23 +1,23 @@
 import { useState } from 'react';
 import AppCard from '../../components/AppCard/AppCard';
 import { ContainerAppCard, ContainerStyled } from './Home.styled';
+import useProjectsData from '../../hooks/useProjectsData';
 
 export default function Home() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
-  const apps = [
-    { title: "Product Entry App", description: "App para contar dinero fácilmente" },
-    { title: "Products Exit App", description: "Control de gastos personales" },
-    { title: "Cash Counter", description: "Money counter by quantities." },
-  ];
+  const { projects, loading, error } = useProjectsData();
 
   const handleCardClick = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
+  if (loading) return <p>Cargando proyectos...</p>;
+  if (error) return <p>{error}</p>;
+
   return (
     <ContainerStyled>
-      {apps.map((app, index) => (
+      {projects.map((app, index) => (
         <ContainerAppCard
           key={index}
           className={`card-wrapper ${expandedIndex === index ? 'expanded' : ''}`}
@@ -25,7 +25,7 @@ export default function Home() {
         >
           <AppCard
             title={app.title}
-            description={app.description}
+            description={app.short_description}
           />
         </ContainerAppCard>
       ))}

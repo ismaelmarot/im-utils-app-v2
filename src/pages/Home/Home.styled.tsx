@@ -4,11 +4,11 @@ import { size } from '../../helpers/setSize';
 
 export const ContainerStyled = styled.div`
     ${flex('column', 'center', 'flex-start')}
-    ${size('100%','')}
-    min-height: 100vh;
+    ${size('100%','100vh')}
 `;
 
 export const ContainerAppCard = styled.div`
-    ${size('100%','')}
-    margin: 0;
+    ${flex('column', 'center', 'center')}
+    ${size('100%','33.3vh')}
+    max-width: 30rem;
 `;
