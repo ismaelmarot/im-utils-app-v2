@@ -3,7 +3,7 @@ import { COLORS } from '../../styles/colors';
 
 export const FooterStyled = styled.footer`
     padding-top: 1rem;
-    border: 3px solid ${COLORS.dark};
+    border: 3px solid white;
     font-size: .8rem;
 `
 export const Button = styled.button`
