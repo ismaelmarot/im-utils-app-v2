@@ -1,9 +1,9 @@
 export const COLORS = {
     dark: 'rgba(42, 43, 46, 1)',
     grey: 'rgba(90, 90, 102, 1)',
-    darkGrey: 'rgba(164, 194, 168, 1)',
-    lightGrey: 'rgba(172, 235, 152, 1)',
-    
+    darkGreen: 'rgba(164, 194, 168, 1)',
+    lightGreen: 'rgba(172, 235, 152, 1)',
+    white: 'rgba(245, 245, 245, 1)',
 }
 
 export const COLORS_APP = {
