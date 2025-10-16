@@ -5,7 +5,6 @@ import { COLORS } from '../../styles/colors';
 
 export const StyledCard = styled(Card)`
     ${size('100%','100%')}
-    border:3px solid ${COLORS.dark};
     border-radius: 0;
     font-size: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -19,6 +18,11 @@ export const StyledCard = styled(Card)`
         z-index: 10;
         border-top: none;
     }
+`;
+
+export const StyledCardBody = styled(Card.Body)`
+    background-color: ${COLORS.grey};
+    color: ${COLORS.white}
 `;
 
 export const Title = styled(Card.Title)`

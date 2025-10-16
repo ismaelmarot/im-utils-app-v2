@@ -1,14 +1,13 @@
 import type { AppCardProps } from '../../interfaces/AppCard.interface';
-import Card from 'react-bootstrap/Card';
-import { StyledCard, Title, Text } from './AppCard.styled';
+import { StyledCard, Title, Text, StyledCardBody } from './AppCard.styled';
 
 function AppCard({ title, description }: AppCardProps) {
     return (
         <StyledCard>
-            <Card.Body>
+            <StyledCardBody>
                 <Title>{title}</Title>
                 <Text>{description}</Text>
-            </Card.Body>
+            </StyledCardBody>
         </StyledCard>
     );
 }
